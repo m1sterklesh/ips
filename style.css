@@ -1,0 +1,387 @@
+:root{
+    --dark: #19191B;
+    --gray: #696871;
+    --purple: #5454D4;
+    --orange: #FF7143;
+}
+
+html{
+    scroll-padding: 100px;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+}
+
+main{
+    margin-top: 141px;
+}
+
+.header{
+
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    padding-block: 30px;
+    top: 0;
+}
+
+[class*="__container"]{
+max-width: 1069px;
+margin-inline: auto;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list{
+    display: flex;
+    gap: 49px;
+}
+
+.header__list-link{
+font-weight: 700;
+font-size: 15px;
+letter-spacing: -0.47px;
+color: var(--gray);
+transition: color 0.4s;
+}
+
+.header__list-link.active{
+    color: var(--dark);
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 10px;
+}
+
+.header__list-link:hover{
+    color: var(--dark);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header__button, .hero__button{
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: white;
+    padding: 19px 59px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.header__button{
+    background: var(--orange);
+}
+
+.header__button:hover, .hero__button:hover, .hero__scroll:hover{
+    opacity: 80%;
+}
+
+.hero{
+    padding-block: 70px;
+}
+
+.hero__container{
+position:relative;
+}
+
+.hero__content{
+max-width: 423px;
+padding-block: 92px;
+}
+
+.hero__image{
+    position: absolute;
+    top: 0;
+    right: -75px;
+}
+
+.hero__title{
+    color: var(--dark);
+    letter-spacing: -2.5px;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    line-height: 77px;
+}
+
+.hero__description{
+    line-height: 30px;
+    font-family: "Mulish", sans-serif;
+    letter-spacing: -0.63px;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.hero__buttons{
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+
+}
+
+.hero__button{
+    background-color: var(--purple);
+}
+
+.hero__scroll{
+    width: 60px ;
+    height: 60px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E7E7E7;
+    border-radius: 100px;
+}
+
+.companies{
+padding-block: 30px;
+}
+
+.companies__list{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.features{
+    padding-block: 120px;
+}
+
+.features__container{
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.feature__content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    max-width: 459px;
+}
+
+.feature__title{
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: -1.56px;
+    line-height: 57px;
+}
+
+.feature__description{
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.63px;
+    color: var(--gray);
+}
+
+.feature__link{
+     font-size: 17px;
+     font-weight: 700;
+     letter-spacing: -0.53px;
+     color: var(--purple);
+}
+
+.feature__link:hover{
+    text-decoration: underline;
+}
+
+.mini-features{
+    padding-block: 32px;
+
+}
+
+.mini-features__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 74px;
+}
+
+.mini-feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.mini-feature__header{
+    display: flex;
+    flex-direction: column;
+    gap: 7px
+}
+
+.mini-feature__title{
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.75px;
+    line-height: 36px;
+}
+
+.mini-feature__image {
+    height: 97px;
+}
+
+.mini-feature__desc{
+    font-family: "Mulish", sans-serif;
+    letter-spacing: -0.5px;
+    line-height: 24px;
+    color: var(--gray);
+}
+
+.subscription{
+    padding-block: 118px 158px;
+}
+
+.subscription__container{
+    display: flex;
+    flex-direction: column;
+    gap:82px;
+}
+
+.subscription__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscription__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.88px;
+
+}
+
+.sub__b{
+    display: flex;
+    border-block: 5px solid #F7F7FB;
+    border-inline: 6 px solid #F7F7FB;
+    border-radius: 10px;
+}
+
+.subscription__tab{
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    background-color: #F7F7FB;
+    border: none;
+    padding: 17px 56px;
+    border-radius: 0 10px 10px 0;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.subscription__tab.active{
+    background-color: var(--purple);
+    border-radius: 10px 0 0 10px;
+    color: white;
+    
+}
+
+.subscription__plans{
+     display: grid;
+     grid-template-columns: 330fr 376fr 330fr;
+     gap: 17px;
+}
+
+.subscription__plan{
+    padding: 34px 23px 27px;
+    text-align: center;
+    background-color: #f8f8f8 ;
+    border-radius: 10px;
+}
+
+.sub__title{
+font-weight: 700;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: -0.56px;
+color: var(--gray);
+}
+
+.sub__price{
+font-weight: 700;
+font-size: 60px;
+letter-spacing: -1.03px;
+line-height: 56px;
+color: var(--dark);
+margin-top: 22px;
+}
+
+.sub__price > span{
+    font-size: 28px;
+}
+
+
+.sub__plan__features{
+ font-family: "Mulish", sans-serif;
+ font-size: 17px;
+ font-weight: 400;
+ line-height: 50px;
+ letter-spacing: -0.53px;
+ margin-top: 28px;
+ color: var(--gray);
+}
+
+.sub__plan__button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+    padding-block: 19px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: var(--purple);
+    margin-top: 36px;
+}
+
+.subscription__plan.active{
+background-color: var(--orange);
+}
+
+.subscription__plan.active .sub__title{
+    color: rgba(255, 255, 255, 70%)
+}
+
+.subscription__plan.active .sub__price,
+.subscription__plan.active .sub__plan__features,
+.subscription__plan.active .sub__plan__button{
+    color: white;
+}
+
+.subscription__plan.active .sub__plan__button{
+    background: #9F3919;
+}
+
+
